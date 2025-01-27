@@ -1,9 +1,10 @@
+
 import sobre from '../public/sobre.png';
 
 export default function Sobre() {
   return (
     <div className="w-full flex gap-16 p-10 justify-center items-center">
-      <div>
+      <div className='hidden md:flex'>
         <img src={sobre} alt="Sobre" style={{ maxHeight: 900}} />
       </div>
 
@@ -18,7 +19,7 @@ export default function Sobre() {
         </p>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum dolor magni praesentium eveniet odit, fugiat cupiditate. Illum error sed unde commodi, consectetur quaerat aliquid doloremque ullam. Eaque eligendi at ducimus.</p>
 
-        <p className='mt-10 text-md'>"Dedicados à beleza, transformando sorrisos e elevando a <span>autoestima</span>"</p>
+        <q className='mt-10 text-md'>Dedicados à beleza, transformando sorrisos e elevando a <span className='text-4xl text-yellow-500'>autoestima</span></q>
       </div>
     </div>
   );

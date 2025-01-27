@@ -5,7 +5,7 @@ import logo from "../public/logo.png";
 
 export default function Footer() {
   return (
-    <footer className="flex w-full flex-col items-center justify-center bg-slate-50 dark:bg-black">
+    <footer className="flex  flex-col items-center justify-center bg-slate-50 dark:bg-black">
       <div className="flex flex-col py-5 lg:flex-row lg:gap-32">
         <div className="flex flex-col items-center gap-2">
           
@@ -23,15 +23,14 @@ export default function Footer() {
 
         <div className="my-1 flex flex-col items-center justify-center gap-4 text-sm lg:py-0">
           <div className="flex gap-2">
-            <a href="#">Home</a>
-            <Dot />
+            
             <a href="#">Sobre</a>
             <Dot />
             <a href="#">Serviços</a>
             <Dot />
             <a href="#">Produtos</a>
             <Dot />
-            <a href="#">Entre em contato</a>
+            <a href="#">Contato</a>
           </div>
           <div>
             <p className="flex items-center justify-center gap-2 p-2">
