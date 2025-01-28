@@ -1,79 +1,43 @@
 import { Card, CardHeader, CardTitle, CardContent } from "./ui/card";
 import hair from "../public/hair.jpeg";
-import man from "../public/man.jpeg";
-import nails4 from "../public/nails4.jpg";
+import man2 from "../public/man2.jpg";
 import nails5 from "../public/nails5.jpg";
-import nails3 from "../public/nails3.jpg";
-import Autoplay from "embla-carousel-autoplay";
-
-import {
-  Carousel,
-  CarouselContent,
-  CarouselItem,
-} from "@/components/ui/carousel";
 
 export default function Servicos() {
-  const manicureImages = [nails4, nails5, nails3];
-
-  c
-
   return (
-    <div className="bg-gray-300">
-      <div className="container mx-auto py-20">
-        <h2 className="text-3xl font-serif text-center mb-10">
+    <div className="bg-gray-100 py-16">
+      <div className="container mx-auto px-6 sm:px-8 lg:px-16">
+        <h2 className="text-4xl font-semibold  text-gray-900 mb-12">
           Nossos Serviços
         </h2>
-
-        <div className="flex justify-center items-center flex-col gap-8 px-10 xl:px-20 xl:flex-row xl:gap-10">
-          {/* Card 1 */}
-          <Card className="bg-gray-100 max-w-96 min-w-96">
-            <CardContent className="p-1">
-              <img src={hair} alt="Corte Feminino" className="h-96 w-96" />
+        
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          
+          <Card className="bg-white shadow-lg rounded-lg overflow-hidden">
+            <CardContent className="p-0">
+              <img src={hair} alt="Corte Feminino" className="w-full h-72 object-cover" />
             </CardContent>
-            <CardHeader className="flex items-center pb-5 pt-4">
+            <CardHeader className="p-4 bg-gray-800 text-white">
               <CardTitle>Corte Feminino</CardTitle>
             </CardHeader>
           </Card>
 
-          {/* Card 2 */}
-          <Card className="bg-gray-100 max-w-96 min-w-96">
-            <CardContent className="p-1">
-              <img src={man} alt="Espaço Masculino" className="h-96 w-96" />
+          
+          <Card className="bg-white shadow-lg rounded-lg overflow-hidden">
+            <CardContent className="p-0">
+              <img src={man2} alt="Espaço Masculino" className="w-full h-72 object-cover" />
             </CardContent>
-            <CardHeader className="flex items-center pb-5 pt-4">
+            <CardHeader className="p-4 bg-gray-800 text-white">
               <CardTitle>Espaço Masculino</CardTitle>
             </CardHeader>
           </Card>
 
-          {/* Carrossel */}
-          <Card className="bg-gray-100 max-w-96">
-            <Carousel
-              className="flex-col items-center justify-center p-0"
-              plugins={[
-                Autoplay({
-                  delay: 2500,
-                  stopOnInteraction: false, // Continua mesmo após interação
-                }),
-              ]}
-              
-            >
-              <CarouselContent className="flex items-center justify-center space-x-4">
-                {manicureImages.map((image, index) => (
-                  <CarouselItem key={index} className="flex-shrink-0 w-96">
-                    <Card>
-                      <CardContent className="p-1">
-                        <img
-                          src={image}
-                          alt={`Manicure ${index + 1}`}
-                          className="object-cover rounded-lg h-96 w-96"
-                        />
-                      </CardContent>
-                    </Card>
-                  </CarouselItem>
-                ))}
-              </CarouselContent>
-            </Carousel>
-            <CardHeader className="flex items-center pb-5 pt-4">
+         
+          <Card className="bg-white shadow-lg rounded-lg overflow-hidden">
+            <CardContent className="p-0">
+              <img src={nails5} alt="Manicure" className="w-full h-72 object-cover" />
+            </CardContent>
+            <CardHeader className="p-4 bg-gray-800 text-white">
               <CardTitle>Manicure</CardTitle>
             </CardHeader>
           </Card>
